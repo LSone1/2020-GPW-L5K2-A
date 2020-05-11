@@ -1,0 +1,10 @@
+[ 2020-03-07T05:01:26+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000635s ]
+[ info ] [ LOG ] INIT File
+[ 2020-03-07T05:01:26+08:00 ][ info ] [ CACHE ] INIT File
+[ 2020-03-07T05:01:26+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007352s ]
+[ 2020-03-07T05:01:26+08:00 ][ info ] [ DB ] INIT mysql
+[ 2020-03-07T05:01:28+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000641s ]
+[ info ] [ LOG ] INIT File
+[ 2020-03-07T05:01:28+08:00 ][ info ] [ CACHE ] INIT File
+[ 2020-03-07T05:01:28+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007265s ]
+[ 2020-03-07T05:01:28+08:00 ][ info ] [ DB ] INIT mysql
