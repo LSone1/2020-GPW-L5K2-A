@@ -9,17 +9,26 @@
 // +----------------------------------------------------------------------
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
-
+// 应用行为扩展定义文件
 return [
-// 生成应用公共文件
-    '__file__' => [],
-    // 定义demo模块的自动生成 （按照实际定义的文件名生成）
-    'demo'     => [
-        '__file__'   => ['common.php'],
-        '__dir__'    => ['behavior', 'controller', 'model', 'view'],
-        'controller' => ['Index', 'Test', 'UserType'],
-        'model'      => ['User', 'UserType'],
-        'view'       => ['index/index'],
+    // 应用初始化
+    'app_init'     => [],
+    // 应用开始
+    'app_begin'    => [],
+    // 模块初始化
+    'module_init'  => [
+        'app\\common\\behavior\\Common',
     ],
-        // 其他更多的模块定义
+    // 插件开始
+    'addon_begin'  => [
+        'app\\common\\behavior\\Common',
+    ],
+    // 操作开始执行
+    'action_begin' => [],
+    // 视图内容过滤
+    'view_filter'  => [],
+    // 日志写入
+    'log_write'    => [],
+    // 应用结束
+    'app_end'      => [],
 ];
