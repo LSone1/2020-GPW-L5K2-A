@@ -1,0 +1,60 @@
+<div id="content-container" class="container">
+    <div class="row">
+        <div class="col-md-3">
+            {include file="common/sidenav" /}
+        </div>
+        <div class="col-md-9">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h2 class="page-header">{:__('Add case')}</h2>
+                    <form id="changepwd-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+                        {:token()}
+
+                        <div class="form-group">
+                            <label for="oldpassword" class="control-label col-xs-12 col-sm-2">{:__('Case name')}:</label>
+                            <div class="col-xs-12 col-sm-4">
+                                <input type="text" class="form-control" id="oldpassword" name="case_name" value="" data-rule="required" placeholder="{:__('Case name')}">
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label  class="control-label col-xs-12 col-sm-2">{:__('Case tag')}:</label>
+                            <div class="radio">
+                                <label>
+                                    <input name="tag" value="{:__('Criminal case')}" type="radio">{:__('Criminal case')}
+                                </label>
+                                <label>
+                                    <input name="tag" value="{:__('Civil case')}" type="radio">{:__('Civil case')}
+                                </label>
+                                <label>
+                                    <input name="tag" value="{:__('Jurisdiction case')}" type="radio">{:__('Jurisdiction case')}
+                                </label>
+                                <label>
+                                    <input name="tag" value="{:__('administrative case')}" type="radio">{:__('administrative case')}
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="content" class="control-label col-xs-12 col-sm-2">{:__('Case content')}:</label>
+                            <div class="col-xs-12 col-sm-4">
+                                <textarea  style="height: 200px;width: 600px;" class="form-control" id="content" name="contents"></textarea>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="form-group normal-footer">
+                            <label class="control-label col-xs-12 col-sm-2"></label>
+                            <div class="col-xs-12 col-sm-8">
+                                <button type="submit" class="btn btn-success btn-embossed disabled">{:__('Submit')}</button>
+                                <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
